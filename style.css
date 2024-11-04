@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #d8f3dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+
+}
+.cards{
+    border-radius: 10px;
+    width: 300px;
+    min-height: 400px;
+  
+    
+      
+   background-image: linear-gradient(to bottom,#52b788,#74c69d,#95d5b2,#b7e4c7,#d8f3dc);
+   box-shadow: 0px 5px 10px 5px #b7e4c7;
+   padding: 1rem;
+position: relative;
+z-index: 2;
+overflow: hidden;
+}
+
+
+
+.cards h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(50, 47, 47);
+    position: relative;
+    background-color: #98ecc1;
+    border-radius: 10px;
+    z-index: 2;
+    overflow: hidden;
+}
+.cards h1::before{
+    position: absolute;
+    content: "";
+    left: 40%;
+
+  width: 300px;
+  height: 150px;
+  background-color: #fff;
+  z-index: -1;
+  rotate: 140deg;
+}
+.cards h1::after{
+    position: absolute;
+    content: "";
+    left: -70%;
+  top: -100%;
+  width: 300px;
+  height: 150px;
+  background-color: #fff;
+  z-index: -1;
+  rotate: 140deg;
+}
+
+.input-box{
+    margin-top: .5rem;
+    display: flex;
+    box-shadow: 0px 0px 1px 1px #95d5b2;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.input-box input{
+    border: none;
+background-color: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #fff; 
+    text-transform: capitalize;
+}
+.input-box button{
+    padding: .3rem 1.5rem;
+    text-transform: capitalize;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #d8f3dc;
+    color: rgb(37, 34, 34);
+    font-weight: 600;
+    cursor: pointer;
+    transition:  .3s;
+}
+
+.input-box button:hover{
+    background: #95d5b2;
+} 
+
+.item{
+    margin-top: 2rem;
+}
+
+.item p{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+ .new-item{
+    display: flex;
+    justify-content: space-between;
+   margin-bottom: 1rem;
+   box-shadow: 0px 0px 1px 1px #74c69d;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   height: 40px;
+   padding: 0 1rem;
+}
+
+.dlt{
+    font-size: 1rem;
+    background-color: rgb(255, 0, 132);
+    padding: .5rem;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.editInput{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.save{
+    background-color: #db3373;
+    border: none;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fa-pen{
+    color: #ee218b;
+    cursor: pointer;
+}
+
+
